@@ -1,6 +1,5 @@
 {
-  "name": "@crearis/base",
-  "publish-branch": "crearis-base",
+  "name": "crearis-prototype",
   "version": "0.0.3",
   "description": "decentralized content for the cultural sector",
   "keywords": [
