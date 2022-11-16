@@ -1,0 +1,25 @@
+{
+  "name": "crearis-framework",
+  "private": true,
+  "repository": "crearis/base",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "FORCE_COLOR=1 pnpm --filter './packages/**' prepack",
+    "cleanup": "rimraf 'packages/**/node_modules' 'node_modules'",
+    "dev": "pnpm play",
+    "lint": "eslint --ext .vue,.ts,.js,.mjs .",
+    "nuxi": "NUXT_TELEMETRY_DISABLED=1 JITI_ESM_RESOLVE=1 nuxi",
+    "nuxt": "NUXT_TELEMETRY_DISABLED=1 JITI_ESM_RESOLVE=1 nuxi",
+    "play": "pnpm nuxi dev playground",
+    "play:build": "pnpm nuxi build playground",
+    "play:preview": "pnpm nuxi preview playground"
+  },
+  "packageManager": "pnpm@7.15.0",
+  "engines": {
+    "node": "^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
