@@ -9,7 +9,8 @@ const y = useWindowScroll().y
     <div :class="y < 160 ? '' : ' pb-36'" />
 
     <AppNavbar config-style="reactive" />
-    <main class=" md:px-3 lg:px-6 max-w-none 2xl:mx-auto 2xl:max-w-screen-2xl">
+
+    <main class="prose prose-gray dark:prose-invert md:px-3 lg:px-6 max-w-none 2xl:mx-auto 2xl:max-w-screen-2xl">
       <slot>
         <h1 class="text-2xl">
           Page not found
